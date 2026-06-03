@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<title>Clients</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 bg-gray-100">
+
+<h1 class="text-2xl font-bold mb-4">Clients</h1>
+
+<table class="w-full bg-white rounded shadow">
+<tr class="bg-gray-100">
+<th class="p-2">Name</th>
+<th>Email</th>
+<th>Amount</th>
+<th>Due Date</th>
+<th>Status</th>
+<th>Actions</th>
+</tr>
+
+{% for c in clients %}
+<tr class="border-t">
+<td class="p-2">{{c['name']}}</td>
+<td>{{c['email']}}</td>
+<td>${{c['debt']}}</td>
+<td>{{c['due_date']}}</td>
+<td>{{c['status']}}</td>
+<td>
+<a href="/mark_paid/{{c['id']}}" class="text-green-600">Paid</a>
+ |
+<a href="/delete/{{c['id']}}" class="text-red-600">Delete</a>
+</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>

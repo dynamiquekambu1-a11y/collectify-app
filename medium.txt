@@ -1,0 +1,8 @@
+Hello {name},
+
+Your payment is now overdue.
+
+Amount: ${amount}
+Due date: {date}
+
+Please complete payment as soon as possible.

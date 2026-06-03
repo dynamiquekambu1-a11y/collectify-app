@@ -1,0 +1,8 @@
+Hello {name},
+
+Final reminder for your unpaid balance.
+
+Amount: ${amount}
+Due date: {date}
+
+Please pay within 48 hours.

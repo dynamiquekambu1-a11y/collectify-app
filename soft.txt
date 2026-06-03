@@ -1,0 +1,8 @@
+Hello {name},
+
+This is a friendly reminder regarding your pending payment.
+
+Amount: ${amount}
+Due date: {date}
+
+Thank you.
