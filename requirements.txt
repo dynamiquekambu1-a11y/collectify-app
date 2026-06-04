@@ -1,4 +1,4 @@
 Flask
 APScheduler
 python-dotenv
-gunicorn
+gunicorn==21.2.0
