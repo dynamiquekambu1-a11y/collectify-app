@@ -1,3 +1,4 @@
 Flask
 APScheduler
 python-dotenv
+gunicorn
