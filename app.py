@@ -17,11 +17,8 @@ app.register_blueprint(client_bp)
 app.register_blueprint(log_bp)
 
 scheduler = BackgroundScheduler()
-
 scheduler.add_job(check_due_payments, 'interval', hours=24)
-
-if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
-    scheduler.start()
+scheduler.start()
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run()
